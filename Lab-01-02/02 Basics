@@ -1,0 +1,73 @@
+ (1) To access the root privileges
+
+	$ sudo -i
+	or
+	$ su -
+	or
+	$ su
+	
+	to log out from root mode
+	$ exit
+
+ (2) Changing the password of root
+ 
+ 	$ passwd
+ 	if there is a Authentication error then type following
+ 	$ sudo -i passwd
+ 	
+ (3) Reading a file page by page
+  
+  	$ more filename
+  	
+ (4) sorting
+ 
+ 	$ sort filename
+ 	Sort filename in Ascii of first character of sentence order and prints
+ 	
+ 	$ sort -r filename
+ 	sort in the reverse order
+ 	
+ 	$ sort -n filename
+ 	sort the file containg numerical data in ascending order
+ 	
+ 	$ sort -f filename
+ 	case insensitive sorting
+ 	
+ 	$ sort -n -r filename
+ 	sort numerical file in descending order
+ 	
+ 	$ sort file >> newFile
+ 	sort the file and then copies to newFile
+ 	
+ 	$ sort file > newFile
+ 	sort the file and then overwrite to newFile
+ 	
+ (5) Renaming and moving the files
+ 
+ 	$ mv oldname newname
+ 	Renames the file
+ 	
+ 	$ mv oldname newname
+ 	Renames the dir
+ 	
+ 	$ mv file directory
+ 	Moves file from current dir to specified dir
+ 	
+ 	$ mv dir destinationDir
+ 	Moves dir to specified location
+ 	
+ (6) Copy files and dir
+ 
+ 	$ cp srcFile destDir
+ 	
+ 	$ cp -r srcDir destDir
+ 	
+ (7) Printing on Console
+ 
+ 	$ echo msg
+ 	
+ (8) Present Working Dir
+ 
+ 	$ pwd
+ 
+ 

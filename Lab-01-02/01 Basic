@@ -1,0 +1,116 @@
+Some Importaant Symbols
+
+	# 	Root User
+	$ 	Normal User
+	~ 	Home
+	/ 	Root
+	. 	Current Dir
+	../	One Step Backward
+	../..   Two Step Backward
+
+Ubuntu CLI commands	
+	
+* Becoming the root user
+
+	$ su
+	and then type password
+	if error occurs then do following
+	
+	$ sudo -i passwd
+	
+	input the old password
+	input the new password
+	retype the password
+	you have got the root privileges
+
+* Clearing the Screen
+
+	$ clear
+	
+* Changing dirctory
+
+	$ cd dirname
+	
+	direcctory must be in the current dir
+	
+	$ cd -
+	prev dir
+	
+	
+   * Going to home
+   
+  	when you are moving to any dir to home
+  	
+  	$ cd ~
+  	
+  	when you are in the root
+  	
+  	$ cd /home
+  	
+   * Going to root
+   
+  	$ cd /
+  	
+   * Going one step back of dir
+   
+  	$ cd ..
+  	
+   * Going two step backward from current
+   
+  	$ cd ../../
+
+* Listing the contents of dir
+   
+   * Listing unhidden files
+
+	$ ls
+
+	$ la
+
+	$ l
+
+   * Listing all files
+
+  	$ ls -a
+  	
+   * Accessing files with full information
+   	$ ls -l
+   
+   * Accessing in different forms
+	$ ls -R
+	recursive
+	
+	$ ls -r
+	recursive while sorting
+	
+	$ ls -t
+	modification wise
+	
+* Creating the directory
+
+	$ mkdir dirname
+
+* Removing the Files
+
+   * Empty directory
+
+  	$ rmdir dirname
+
+   * Nonemty directory or any file
+
+  	$ rm -r file/dirname
+  	
+  	or
+  	
+  	$ rm filename
+  	
+   * Delete all file with certain extension	
+
+   	$ rm *.extension
+  	
+* Creating a file 
+ 	
+ 	$ touch filename
+
+
+ 	

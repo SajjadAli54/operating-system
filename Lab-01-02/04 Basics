@@ -1,0 +1,33 @@
+ (1) Pipe (|) 	: Helps out using two commands at the same time
+ 
+ 	$ cat filename | sort
+ 
+ 	$ cat filename | less
+ 	Works much like more
+ 	press q to exit
+ 	
+ 	$ cat filename | more
+ 	
+ (2) checking history
+ 
+ 	$ history
+ 	
+ (3) Scripting : Keeping the log of activities performed
+ 
+ 	$ script Log.txt
+ 	
+ 	It will keep track on activities untill you put command
+ 	
+ 	$ exit
+ 	
+ (4) Apt or Apt-get pkg manager
+ 
+ 	$ sudo apt-get update
+ 	Updates the database repo links
+ 	
+ 	$ sudo apt-get upgrade
+ 	Upgrades tools
+ 	
+ 	$ sudo apt-get install pkgname
+ 	
+ 	

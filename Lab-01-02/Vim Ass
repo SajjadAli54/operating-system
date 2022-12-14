@@ -1,0 +1,21 @@
+$ vim Hello.java
+
+Normal Mode			[Esc]
+Insert Mode			i
+Normal Mode operations
+	Force close 		:q![Enter]
+	Save and close		:wq![Enter]	OR	:x![Enter]
+	Basic Navigation	:set number[Enter]	// To set the line numbers
+				:line number[Enter]	//To go to specific line
+	Save			:w![Enter]
+	Basic Editing		
+				:dd	//Deleting the line having cursor
+				:u	// Undo command
+				:v	//Highlighting, selecting and deselecting by arrow keys (Visual Mode)
+				:y	// yank mode (Copy the selected text to clipboard)
+				:o	// creating a new line
+				:p	// Paste the content
+	Basic Searching	/keyword to search
+	Concurrent Files	:split filename or :vsplit filename 	// Horizontal or vertical split
+				Press [ctrl]ww to switch the screen
+	

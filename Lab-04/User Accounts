@@ -1,0 +1,64 @@
+* Getting info aboput users and groups
+	
+	$ cd /etc/
+	Here you will have three files of our interest i.e. passwd, shadow and group
+	
+	$ cat passwd
+	It stores the user information in follwoing format
+	[user]:x[for password]:[User Id]:[Group Id]:[User Name],[Address],[Phone],[Default Dir]:[Shell Script]
+	
+	$ sudo cat shadow
+	It stores the passwords in encrypted form most probably by SHA256 key.
+	
+	$ cat group
+	It stores the information about groups
+	[Group Name]:x:[Group Id]
+	
+* Creating new users
+
+	$ sudo adduser nameOfUserAccount
+	Provide all the information and your user have been created.
+	The user will be created inside the group having same name (nameOfUserAccount) as user by default.
+	User can't exist without group.
+	
+	$ su - nameOfUserAccount
+	switch to another user mode
+	
+	You can change the default dir of user by modifying the passwd file
+	Open passwd file in sudo mode. Go to the line where you find the user account info
+	There you only need to change the default dir which is next to Phone
+	You are  done and close the file and enjoy!
+	
+	$ sudo addgroup
+	
+	$ sudo usermod -g groupName  nameOfUserAccount
+	This will move 'nameOfUserAccount' account to group 'groupName'
+	
+	$ sudo delgroup group
+	It deletes the given group
+	
+	$ sudo deluser user
+	It deletes the given user
+	
+	$ sudo deluser -f user
+	Force delete
+	
+* File Ownership
+
+	Syntax 	chown [user]:[group] file
+	
+	$ sudo chown user file
+	Now this user owns the file
+	Give the permission through chmod
+	
+	$ sudo chmod u+x file
+	
+	$ sudo chown :group file
+	Now file is also owned by a group
+	
+	$ sudo chmod g+x file
+	
+	File can be owned by just one group at a time.
+	
+	
+	

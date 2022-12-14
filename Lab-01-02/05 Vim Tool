@@ -1,0 +1,31 @@
+(1) Install Vim
+
+	$ sudo apt-get install vim
+	
+	$ vim
+	
+(2) Insert Mode
+
+	press i
+	
+(3) Command Mode
+
+	press Esc
+	
+(4) Exit and save from vim
+
+	* Force Exit
+	
+		press Esc:q!
+		press enter
+	
+	* Save
+	
+		press Esc:w!
+		press enter
+		
+	* Save and Exit
+	
+		press Esc:wq!
+		press enter
+		

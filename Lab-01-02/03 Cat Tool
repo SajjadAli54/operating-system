@@ -1,0 +1,27 @@
+ (1) Read file content
+ 
+ 	$ cat filename
+ 	
+ (2) Create or overwrite existing file in interactive mode
+ 
+ 	$ cat > filename
+ 	Write the content into file! Close by ctrl+d or ctrl+c to save it.
+ 	
+ (3) Copy the content of file into another file
+ 
+ 	$ cat firstFile >> secondFile
+ 	
+ 	if secondFile is already present then the content of firstFile would be appended to 
+ 	secondFile! If not then it would be created automatically and then copied!
+ 	
+ 	$ cat firstFile > secondFile
+ 	
+ 	If the secondFile is already present then the content would be overwritten!
+ 	
+ 	$ cat firstFile secondFile > thirdFile
+ 	
+ 	$ cat firstFile secondFile >> thirdFile
+ 	
+ (4) Showing the content of file in numbered line
+ 
+ 	$ cat -n filename

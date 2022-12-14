@@ -1,0 +1,77 @@
+
+$ ls -l
+shows the list of files with given permissions
+first letter
+	-	file
+	d	directory
+	p	pipe
+
+Three groups of permissions
+	user		1-3
+	group	4-6
+	other	7-9
+File Permissions	
+	r	read permission
+	w	write
+	x	execute
+
+To see the groups info
+	
+	$ cat /etc/groups
+
+Giving Permissions
+	syntax	chmod [user][group][other] file/dir
+
+			1	2	4
+			x	w	r
+	0		0	0	0	no any permission
+	1		1	0	0	just can execute
+	2		0	1	0	just can write
+	3		1	1	0	can write and exec
+	4		0	0	1	can only read
+	5		1	0	1	can exec and read
+	6		0	1	1	can read and write
+	7		1	1	1	all permissions
+
+	$ chmod 444 file/dir	
+	Giving only read permissions to user, group and others
+
+	$ chmod 744 file/dir	
+	Giving all permissions to user! However, only read permission to group and other
+
+	$ chmod 000 file
+	No permission to anyone
+
+	$ chmod 111 file
+	Giving only exec perm
+
+Easier Tools
+
+	+	Give extra permission
+	-	Remove a permission
+	u	User
+	g	Group
+	o	Other
+	a	All
+
+	$ chmod g+r file
+	giving read perm to group
+
+	$ chmod o-w file
+	Removing write permission to other
+
+	$ chmod u+rwx file
+	Giving read, write and exec perm to user
+
+	$ chmod a+rwx file
+	Giving read, write and exec perm to all
+
+	$ chmod a-rw file
+	Removing read, write access to all
+
+	$ chmod ugo=rwx file
+	Giving full access to all
+
+	$ chmod ugo=rw file
+	
+	$ chmod ug=rw file
